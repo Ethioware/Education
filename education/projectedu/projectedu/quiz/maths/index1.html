@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url('https://wallpaperaccess.com/full/1567674.jpg');
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            text-align: center;
+           
+            height: 100vh;
+         margin: 0;
+        
+        }
+       
+        #header {
+            margin: 0;
+            margin-bottom: 90px;
+
+
+        }
+        
+        .welcome {
+            color: #1855b8bd;
+            font-size: 50px;
+            margin: 0;
+            flex-wrap: nowrap;
+
+           
+        }
+        #quiz {
+            display: none;
+            color: floralwhite;
+            cursor: pointer;
+        }
+        #optionA,#optionB,#optionC,#optionD{
+            font-size: 30px;
+          text-align: left;
+           margin-left: 650px; 
+          margin-bottom: 20px;
+         }
+         #mathsStartButton {
+            background-color:  rgba(255, 250, 240, 0.61);
+            cursor: pointer;
+         }
+        #question {
+            margin-top: 20px;
+            font-size: 40px;
+            color: lightgreen;
+        }
+       
+        button, a{
+            padding: 20px 40px;
+            font-size: 19px;
+            border: none;
+            text-decoration: none;
+            border-radius: 20px;
+        }
+        button:active, a:active, #mathsStartButton:active{
+            transform: scale(.95);
+        
+        }
+        button:hover {
+            background-color: rgba(34, 34, 209, 0.37);
+            color: red;
+            transform: scale(.95);
+            cursor: pointer;
+        }
+        a:hover, #mathsStartButton:hover {
+            color: rgba(238, 163, 25, 0.671);
+            background-color: rgba(34, 34, 209, 0.37);
+        }
+        a {
+            
+            color: black;
+            background-color: rgba(255, 250, 240, 0.61);
+            margin-left: 20px;
+        }
+       #links {
+            margin-top: -250px;
+        }
+        #score {
+             background-color: rgba(0, 128, 0, 0.363);
+             width: 260px;
+             color: blueviolet;
+             font-size: 50px;
+             padding: 10px;
+            border-radius: 10px;
+            margin-top: 20px;      
+            margin-left: 20px;      
+            }
+        
+.logo{
+   color: rgba(255, 255, 255, 0.603);
+   font-weight: bold;
+   font-size: 60px;
+   display: flex;
+   align-items: flex-start;
+   margin-top: 250px;
+   margin-left: 20px;
+}
+  #arrow{
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+  }
+  #homeButton {
+    text-align:right;
+    margin-top: -200px;
+    cursor: pointer;
+  }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="welcome">
+            <h1 id="header">Welcome to Educational World</h1>
+        </div>
+        <div id= "score">
+            100 Points
+         </div>
+        <div id="quiz">
+            <h3 id="question"></h3>
+            <div id="optionA" onclick="afunction()"></div>
+            <div id="optionB"  onclick="bfunction()"></div>
+            <div id="optionC"  onclick="cfunction()"></div>
+            <div id="optionD"  onclick="dfunction()"></div><br>
+    
+        </div>
+        <div">
+    
+            <button id="mathsStartButton" onclick="qn1()">Start Maths Quiz</button>
+        <!-- </div>
+         <div id="homeButton" onclick="homeButtonfunction()"> -->
+          <!-- <img id="arrow" src="../arrow.png">
+        </div> --> -->
+        <div id="qn1Button" onclick="qn1Submit()">
+            <button >Submit</button>
+        </div>
+        <div id="qn2Button" onclick="qn2Submit()">
+            <button >Submit</button>
+        </div>
+        <div id="qn3Button" onclick="qn3Submit()">
+            <button >Submit</button>
+        </div>
+        <div id="qn4Button" onclick="qn4Submit()">
+            <button >Submit</button>
+        </div>
+    
+        <div class="img">
+
+        </div>
+        <lable class = "logo"><img src="../icon.jpg" style="width: 60px; height:60px; background:transparent;">ducational world</lable>
+        <div  id="links">
+            <a href="../chemi/index2.html">Go to Chemi Quiz</a>
+            <a href="../Bio/index3.html">Go to Bio Quiz</a>
+        </div>
+    </div>
+    
+
+    <script src="./main1.js">
+
+    </script>
+</body>
+</html>

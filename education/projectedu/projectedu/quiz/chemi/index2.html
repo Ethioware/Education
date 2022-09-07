@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url('https://wallpaperaccess.com/full/1567674.jpg');
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            text-align: center;
+           
+            height: 100vh;
+         margin: 0;
+        
+        }
+       
+        #header {
+            margin: 0;
+            margin-bottom: 90px;
+        }
+         span {
+            color: rgb(67, 171, 206);
+            margin: 0;
+        }
+        .welcome {
+            color: #335da0bd;
+            font-size: 50px;
+            margin: 0;
+            text-transform: capitalize;
+           
+        }
+        #quiz {
+            display: none;
+            color: floralwhite;
+            cursor: pointer;
+        }
+        #optionA,#optionB,#optionC,#optionD{
+            font-size: 30px;
+          text-align: left;
+           margin-left: 620px; 
+          margin-bottom: 20px;
+         }
+         
+        #question {
+            margin-top: 20px;
+            font-size: 40px;
+            color: lightgreen;
+        }
+        button, a{
+            padding: 20px 40px;
+            font-size: 19px;
+            border: none;
+            text-decoration: none;
+            border-radius: 20px;
+        }
+          #score {
+             background-color: rgba(0, 128, 0, 0.363);
+             width: 260px;
+             color: blueviolet;
+             font-size: 50px;
+             padding: 10px;
+            border-radius: 10px;
+            margin-top: 20px;      
+            margin-left: 20px;      
+            }
+        
+        button:active, a:active{
+            transform: scale(.97);
+        
+        }
+        button:hover {
+            background-color: rgba(34, 34, 209, 0.37);
+            color: red;
+        }
+        a:hover {
+            color: rgba(238, 163, 25, 0.671);
+            background-color: rgba(34, 34, 209, 0.37);
+        }
+        a {
+            
+            color: black;
+            background-color: white;
+        }
+       #links {
+            margin-top: -200px;
+            gap: 20px;
+        }
+        #math {
+            margin-right: 12px;
+        }
+      
+        
+       
+        .logo{
+   color: rgba(255, 255, 255, 0.603);
+   font-weight: bold;
+   font-size: 60px;
+   display: flex;
+   align-items: flex-start;
+   margin-top: 180px;
+   margin-left: 20px;
+  
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="welcome">
+            <h1 id="header"></h1>
+        </div>
+        <div id= "score">
+            100 Points
+         </div>
+        <div id= "goToHome">
+            <img src="" alt="">
+         </div>
+        <div id="quiz">
+            <h3 id="question"></h3>
+            <div id="optionA" onclick="afunction()"></div>
+            <div id="optionB"  onclick="bfunction()"></div>
+            <div id="optionC"  onclick="cfunction()"></div>
+            <div id="optionD"  onclick="dfunction()"></div><br>
+    
+        </div>
+        <div >
+    
+            <button id="chemiStartButton" onclick="qn1()">Start Chemi quiz</button>
+        </div>
+        <div id="homeButton" onclick="homeButtonfunction()">
+            <button >Home</button>
+        </div>
+        <div id="qn1Button" onclick="qn1Submit()">
+            <button >Submit</button>
+        </div>
+        <div id="qn2Button" onclick="qn2Submit()">
+            <button >Submit</button>
+        </div>
+        <div id="qn3Button" onclick="qn3Submit()">
+            <button >Submit</button>
+        </div>
+        <lable class = "logo"><img src="../icon.jpg" style="width: 60px; height:60px; background:transparent;">ducational world</lable>
+        <div  id="links">
+            <a id="math" href="../maths/index1.html">Go Maths Quiz</a>
+            <a href="../Bio/index3.html">Go Bio Quiz</a>
+        </div>
+    </div>
+    
+
+    <script src="./main2.js">
+
+    </script>
+</body>
+</html>

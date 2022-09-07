@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Poppins", sans-serif;
+   text-decoration: none;
+   list-style: none;
+}
+#time {
+  font-size: 30px;
+  margin-top: 150px;
+  text-align: right;
+  margin-right: 50px;
+  color: rgba(0, 0, 0, 0.575);
+  text-shadow: 0 3px 2px rgba(247, 17, 17, 0.171);
+}
+body{
+   font-style: montserrat;
+   background-image: url('https://images.unsplash.com/photo-1432821596592-e2c18b78144f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGVkdWNhdGlvbiUyMGJhY2tncm91bmR8ZW58MHx8MHx8&w=1000&q=80');
+   background-size: cover;
+   background-position: center center;
+  height: 100vh;
+  margin: 0;
+  background-repeat: no-repeat;
+
+
+}
+
+.container{
+   justify-content: space-between;
+
+   
+}
+
+.logo{
+   color: rgba(255, 255, 255, 0.603);
+   font-weight: bold;
+   font-size: 40px;
+   margin-left: -80px;
+  
+}
+nav{
+   
+   display:flex;
+   justify-content: space-between;
+   padding-top:40px;
+   padding-left:10%;
+}
+nav ul{
+   margin-right: 100px;
+}
+
+nav ul li{
+   display: inline-block;
+   
+   padding: 20px 20px;
+
+}
+nav ul li a{
+   color: white;
+   background-color: rgba(0, 128, 0, 0.438); 
+   padding: 10px 20px;
+   border-radius: 5px;
+   font-weight: bold;
+   font-size: 20px;
+}
+a:hover{
+   background-color: rgb(59, 52, 49);
+   color: white;
+   transition: all .3s;
+}
+.search-bar-container{
+   width: 100%;
+   max-height: 530px;
+   padding: 5%;
+  
+   background-position: center;
+   background-size: cover;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.search-bar{
+   width:100%;
+   max-width: 500px;
+   box-shadow: 0 10px 2px rgba(0, 0, 0, .5) ;
+   background: white;
+   display: flex;
+   align-items: center;
+   border-radius: 50px;
+   padding: 10px 20px;
+   margin-top: 500px;  
+   margin-bottom: 40%;
+   height: 50px;
+
+
+
+}
+
+.search-bar input{
+   background: transparent;
+   flex: 1;
+   border: 0;
+   outline: none;
+   padding: 24px 20px;
+   font-size: 20px;
+   color: blue;
+}
+
+
+.search-bar button img{
+   width: 25px;
+   height: 25px;
+   background: white ;
+}
+
+.search-bar button{
+   border: 0;
+   border-radius: 50%;
+   width: 60px;
+   height: 40px;
+   background: white;
+   cursor: pointer;
+
+}
+.search-bar button:hover{
+   transition: .3s;
+   transform: scale(1.1);
+}
+.name {
+   margin-top: -400px;
+   margin-left: 50px;
+
+
+}
+.name h1 {
+      width: fit-content;
+      color: transparent;
+      position: relative;
+      font-size: 64px;
+      animation: text_reveal 1s ease forwards;
+      animation-delay: 1.3s ;
+      
+
+}
+
+
+.name h1 span {
+    background-color: orange;
+    width: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    position: absolute;
+    animation: text_reveal_box 2s ease;
+    animation-delay: .3s;
+
+}
+.contact {
+    height: 100vh;    
+    width: 100vw;
+}
+@keyframes text_reveal {
+    100%{
+      color: rgb(137, 240, 137);
+    }
+ 
+}
+@keyframes text_reveal_box {
+    50% {
+        width: 100%;
+        left: 0;
+    }
+    100% {
+        left: 100%;
+        width: 0;
+    }
+}

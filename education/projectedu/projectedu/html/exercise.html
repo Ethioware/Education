@@ -1,0 +1,33 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheer" href="./styleexercise.css">
+    <link rel="icon" href="./Images/icon.jpg">
+    <title>exercise</title>
+</head>
+<body>
+
+    <div class="exercise_list">
+        <img id="demo" src="./Images/Bio12.png " onclick="check()" >
+        <img src="./Images/maths9.jpeg">
+        <img src="./Images/geo.jpg">
+
+        
+    </div>
+    <script>
+        function check ()  {
+            var math = prompt('what is 2+2 ' )
+            var bio = document.getElementById('demo').innerHTML
+            if (math === '4') {
+                alert('correct')
+            } else {
+                alert('incorrect')
+            }
+        }
+    </script>
+        
+</body>
+</html>

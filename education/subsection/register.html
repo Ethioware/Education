@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+     input {
+        margin-bottom: 10px;
+     }   
+     div {
+        background-color: lightgreen;
+        margin-top: 70px;
+        margin-left: 25vw;
+        width: fit-content;
+        padding: 60px 170px;
+        border-left: 40px solid blue;
+        border-right: 40px solid blue;
+        border-top: 40px solid black;
+        border-bottom: 40px solid black;
+     }
+    </style>
+</head >
+<body>
+    <div >
+        <form >
+            Username : 
+            <br>
+            <input type="text" id="userName" name="username" >
+            <br>
+            Email : 
+            <br>
+            <input type="text" id="email" name="email" >
+            <br>
+            Password :
+            <br>
+            <input type="text" id="pass" name="Password" >
+            <br>
+            Confirm Password :
+            <br>
+            <input type="text" id="confirm-pass" name="confirm-password" >
+            <br>
+            Gender :
+            <br>
+            <input type="radio" name="gender"  value="Male">Male
+            <br>
+            <input type="radio" name="gender"  value="Female">Female
+            <br>
+            <input type="radio" name="gender"  value="Female">Prefer not to say
+            <br>
+            <input type="submit" id="submit" name="submit" onclick="Ap()">
+        
+        </form>
+    </div>
+   
+    <script>
+        function Ap () {
+            var text = 'You are successfully registered '
+            var name = document.getElementById('userName').value
+            var pass = document.getElementById('pass').value 
+            var email = document.getElementById('email').value
+            var confirm = document.getElementById('confirm-pass').value
+             if (name && pass && email && confirm !== "")  {
+                if (pass === confirm){
+                    if (pass > 5) {
+                        alert(text)
+                      window.open('../Html/index.html')
+                    }else {
+                        alert('You password must be greater than 5 characters ')
+                    }
+                      
+                 }else {
+                        alert('check your pass')
+                    }
+            }else {
+                alert('check again')
+            }
+        }
+      
+    </script>
+
+</body>
+</html>
